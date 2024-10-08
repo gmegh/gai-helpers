@@ -10,7 +10,7 @@ pytesseract==0.3.10
 Pillow==9.5.0
 reportlab==4.0.5
 svglib==1.5.1
-langchain==0.0.300
-langchain-openai==0.1.2  # For ChatOpenAI and OpenAIEmbeddings
-langchain-weaviate==0.1.0  # For WeaviateVectorStore
+langchain==0.3.1
+langchain-openai==0.2.1  # For ChatOpenAI and OpenAIEmbeddings
+langchain-weaviate==0.0.3  # For WeaviateVectorStore
 langchain-community==0.3.1
