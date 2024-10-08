@@ -10,11 +10,8 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Ensure all environment variables in .env are loaded (if applicable)
-COPY .env /app/.env
-
 # Expose the port that the app will run on
 EXPOSE 8501
 
 # Run the application when the container launches
-CMD ["streamlit", "run", "src/app.py"]
+CMD ["streamlit", "run", "gai-helpers/app.py"]
