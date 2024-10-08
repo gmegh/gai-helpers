@@ -11,7 +11,7 @@ COPY . /app
 RUN mkdir -p ~/.streamlit
 
 # Copy your config.toml into the Streamlit config directory
-COPY config.toml ~/.streamlit/config.toml
+COPY ./gai-helpers/config.toml ~/.streamlit/config.toml
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
