@@ -13,14 +13,6 @@ def setup_sidebar():
     if st.sidebar.checkbox("Local Docs", value=True):
         st.session_state["required_sources"].append("localdocs")
 
-    st.sidebar.markdown(
-        """
-        Created by Guillem Megias & Merlin Fisher-Levine  
-        With support from Christopher Stubbs  
-        Special thanks to Elana Urbach
-        """
-    )
-
 
 def setup_landing_page():
     # Display the landing page until the first message is sent
