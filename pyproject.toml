@@ -6,7 +6,7 @@ authors = ["Guillem Megias <your-email@example.com>"]
 
 # Specify the Python version and dependency management
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.11"
 streamlit = "^1.25.0"
 weaviate-client = "^3.7.0"
 requests = "^2.31.0"
