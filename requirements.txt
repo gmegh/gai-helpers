@@ -10,9 +10,6 @@ pytesseract==0.3.10
 Pillow==9.5.0
 reportlab==4.0.5
 svglib==1.5.1
-streamlit==1.25.0  # Adjust the version as necessary
-python-dotenv==1.0.0  # For load_dotenv
-weaviate-client==3.7.0  # For Weaviate
 langchain==0.0.300
 langchain-openai==0.1.2  # For ChatOpenAI and OpenAIEmbeddings
 langchain-weaviate==0.1.0  # For WeaviateVectorStore
