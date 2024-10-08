@@ -27,7 +27,7 @@ def setup_landing_page():
     if not st.session_state.message_sent:
         with st.container():
             # Add logo (Make sure the logo is in your working directory or provide the full path)
-            st.image("../static/rubin_avatar_bw.png", clamp=True)
+            st.image("/static/rubin_avatar_bw.png", clamp=True)
 
             # Centered title and message
             st.markdown(

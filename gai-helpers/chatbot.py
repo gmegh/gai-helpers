@@ -86,8 +86,8 @@ def handle_user_input(qa_chain, msgs):
     # Define avatars for user and assistant messages
     avatars = {"human": "user", "ai": "assistant"}
     avatar_images = {
-        "human": "../static/user_avatar.png",
-        "ai": "../static/rubin_avatar_bw.png",
+        "human": "/static/user_avatar.png",
+        "ai": "/static/rubin_avatar_bw.png",
     }
 
     for msg in msgs.messages:

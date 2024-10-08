@@ -13,12 +13,12 @@ load_dotenv()
 st.set_page_config(
     page_title="Vera - Rubin Observatory Bot",
     initial_sidebar_state="collapsed",
-    page_icon="../static/rubin_avatar_color.png",
+    page_icon="/static/rubin_avatar_color.png",
 )
-st.logo("../static/logo.png")
+st.logo("/static/logo.png")
 
 # Load the CSS file
-with open("../static/style.css") as css:
+with open("/static/style.css") as css:
     st.markdown(f"<style>{css.read()}</style>", unsafe_allow_html=True)
 
 # Set up the session state
