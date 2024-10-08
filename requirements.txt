@@ -1,6 +1,6 @@
 pinecone-client==2.2.2
 python-dotenv==1.0.0
-tiktoken==0.3.3
+tiktoken==0.7.0
 streamlit==1.38.0
 weaviate-client==3.24.2
 atlassian-python-api==3.41.3
