@@ -21,18 +21,23 @@ def submit_text():
 
 @st.cache_resource(ttl="1h")
 def configure_retriever():
-    weaviate_url = os.getenv("WEAVIATE_URL")
+    openai_api_key = os.getenv("OPENAI_API_KEY")
     weaviate_api_key = os.getenv("WEAVIATE_API_KEY")
+    http_host = os.getenv("HTTP_HOST")
+    grpc_host = os.getenv("GRPC_HOST")
 
-    client = weaviate.connect_to_weaviate_cloud(
-        cluster_url=weaviate_url,
-        auth_credentials=Auth.api_key(weaviate_api_key),
+    client = weaviate.connect_to_custom(
+        http_host=http_host,      # Hostname for the HTTP API connection
+        http_port=80,              # Default is 80, WCD uses 443
+        http_secure=False,           # Whether to use https (secure) for the HTTP API connection
+        grpc_host=grpc_host,   # Hostname for the gRPC API connection
+        grpc_port=50051,              # Default is 50051, WCD uses 443
+        grpc_secure=True,           # Whether to use a secure channel for the gRPC API connection
+        auth_credentials=Auth.api_key(weaviate_api_key),    # The API key to use for authentication
         headers={
-            "X-OpenAI-Api-Key": os.getenv(
-                "OPENAI_API_KEY"
-            )  # Or any other inference API keys
+            "X-OpenAI-Api-Key": openai_api_key
         },
-        skip_init_checks=True,
+        skip_init_checks=True
     )
 
     retriever = CustomWeaviateVectorStore(
