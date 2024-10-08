@@ -55,7 +55,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/gmegh/gai-helpers:${{ steps.vars.outputs.tag }}
+            ghcr.io/gmegh/gai-helpers:main
           cache-from: type=gha
           cache-to: type=gha,mode=max
           platforms: linux/amd64
