@@ -7,12 +7,6 @@ WORKDIR /app
 # Copy the current directory contents into the container at /app
 COPY . /app
 
-# Create the Streamlit configuration folder
-RUN mkdir -p ~/.streamlit
-
-# Copy your config.toml into the Streamlit config directory
-COPY ./gai-helpers/config.toml ~/.streamlit/config.toml
-
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
