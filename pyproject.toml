@@ -1,5 +1,8 @@
-[project]
-name = "docuchat"
+[tool.poetry]
+name = "gai-helpers"  # This should match your package directory
+version = "0.1.0"
+description = "A chatbot powered by Weaviate and Streamlit."
+authors = ["Guillem Megias <your-email@example.com>"]
 
 # Specify the Python version and dependency management
 [tool.poetry.dependencies]
