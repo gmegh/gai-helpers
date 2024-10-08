@@ -19,6 +19,10 @@ on:
 jobs:
 
   build:
+    permissions:
+        contents: read
+        packages: write  # <-- This is where you set the GITHUB_TOKEN permissions
+
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
