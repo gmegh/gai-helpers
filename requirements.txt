@@ -16,3 +16,4 @@ weaviate-client==3.7.0  # For Weaviate
 langchain==0.0.300
 langchain-openai==0.1.2  # For ChatOpenAI and OpenAIEmbeddings
 langchain-weaviate==0.1.0  # For WeaviateVectorStore
+langchain-community==0.3.1
