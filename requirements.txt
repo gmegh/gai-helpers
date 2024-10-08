@@ -2,7 +2,7 @@ pinecone-client==2.2.2
 python-dotenv==1.0.0
 tiktoken==0.7.0
 streamlit==1.38.0
-weaviate-client==3.24.2
+weaviate-client==4.8.1
 atlassian-python-api==3.41.3
 pytesseract==0.3.10
 Pillow==9.5.0
