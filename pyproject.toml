@@ -1,13 +1,5 @@
-[tool.poetry]
-name = "gai-helpers"
-version = "0.1.0"
-description = "A chatbot powered by Weaviate and Streamlit."
-authors = ["Guillem Megias <your-email@example.com>"]
-license = "MIT"
-readme = "README.md"
-homepage = "https://github.com/gmegh/gai-helpers"
-repository = "https://github.com/gmegh/gai-helpers"
-keywords = ["chatbot", "Weaviate", "Streamlit", "Docker"]
+[project]
+name = "docuchat"
 
 # Specify the Python version and dependency management
 [tool.poetry.dependencies]
