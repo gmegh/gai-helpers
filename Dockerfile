@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8501
 
 # Run the application when the container launches
-CMD ["streamlit", "run", "gai-helpers/app.py", "--server.baseUrlPath=/gai-helpers"]
+CMD ["streamlit", "run", "gai-helpers/app.py"]
