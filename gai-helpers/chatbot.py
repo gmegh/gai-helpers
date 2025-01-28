@@ -32,7 +32,7 @@ def configure_retriever():
         http_secure=False,           # Whether to use https (secure) for the HTTP API connection
         grpc_host=grpc_host,   # Hostname for the gRPC API connection
         grpc_port=50051,              # Default is 50051, WCD uses 443
-        grpc_secure=True,           # Whether to use a secure channel for the gRPC API connection
+        grpc_secure=False,           # Whether to use a secure channel for the gRPC API connection
         auth_credentials=Auth.api_key(weaviate_api_key),    # The API key to use for authentication
         headers={
             "X-OpenAI-Api-Key": openai_api_key
